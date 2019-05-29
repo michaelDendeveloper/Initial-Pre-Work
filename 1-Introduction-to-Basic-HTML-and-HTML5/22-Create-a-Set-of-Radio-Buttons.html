@@ -1,0 +1,32 @@
+<!-- Radio buttons are a type of input.  By wrapping and input element inside of a label element, it will automatically associate the radio button input with the label.  Name all related radio buttons with the same name attribute to create radio button groups.  Selecting any button will deselect the other butons within the same group ensuring that only one response is used as the input
+-->
+
+<h2>CatPhotoApp</h2>
+<main>
+  <p>Click here to view more <a href="#">cat photos</a>.</p>
+
+  <a href="#"><img src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back."></a>
+
+  <p>Things cats love:</p>
+  <ul>
+    <li>cat nip</li>
+    <li>laser pointers</li>
+    <li>lasagna</li>
+  </ul>
+  <p>Top 3 things cats hate:</p>
+  <ol>
+    <li>flea treatment</li>
+    <li>thunder</li>
+    <li>other cats</li>
+  </ol>
+  <form action="/submit-cat-photo">
+    <input type="text" placeholder="cat photo URL" required>
+    <button type="submit">Submit</button>
+    <label for="indoor">
+      <input type="radio" name="indoor-outdoor">Indoor
+    </label>
+    <label for="Outdoor">
+      <input type="radio" name="indoor-outdoor">Outdoor
+    </label>
+  </form>
+</main>
