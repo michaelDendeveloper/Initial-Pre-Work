@@ -1,0 +1,14 @@
+<!-- Priortizing styles: When there is a definition of a color and a class is defined, the class overrides the body definition.
+-->
+
+<style>
+  body {
+    background-color: black;
+    font-family: monospace;
+    color: green;
+  }
+  .pink-text {
+    color: pink;
+  }
+</style>
+<h1 class="pink-text" >Hello World!</h1>
