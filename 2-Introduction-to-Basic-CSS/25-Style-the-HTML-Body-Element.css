@@ -1,0 +1,8 @@
+<!-- Css inheritance: Prove that the body element exists by assigning it an attribute in the style element.  Inheritance will be expanded on
+-->
+
+<style>
+  body {
+    background-color:black;
+  }
+</style>
