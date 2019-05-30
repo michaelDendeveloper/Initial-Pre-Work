@@ -1,0 +1,14 @@
+<!-- Browser compatibility issues will occur at some point.  Browser fallbacks can be used to avoid potential problems.  Browsers ignore properties they don't recognize or support.  To provide browser fallback, provide another more widely supported value immediately before the declaration.  That way, older browsers will have something to fall back on, while newer browsers just interpret the later declaration.  Use keyword fallback: before the background declaration
+  -->
+<style>
+  :root {
+    --red-color: red;
+  }
+  .red-box {
+    fallback: background: red;
+    background: var(--red-color);
+    height: 200px;
+    width:200px;
+  }
+</style>
+<div class="red-box"></div>
