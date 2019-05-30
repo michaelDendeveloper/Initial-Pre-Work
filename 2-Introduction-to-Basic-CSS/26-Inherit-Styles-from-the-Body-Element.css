@@ -1,0 +1,13 @@
+<!-- Every HTML page has a body element and that body element can be styled with CSS just like any other HTML element.  All other elements will inherit the body element's styles. This is a demonstration of inheritance where elements inherit the style from the style definition
+-->
+
+<style>
+
+  body {
+    background-color: black;
+    color: green;
+    font-family: monospace;
+  }
+
+</style>
+<h1>Hello World</h1>
