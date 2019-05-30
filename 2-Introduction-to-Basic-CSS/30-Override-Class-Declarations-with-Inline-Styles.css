@@ -1,0 +1,20 @@
+<!-- Inline styles are another way to override class declarations besides id declarations. An inline style will override the class declaration as demonstrated by the white color style in the in line declaration
+-->
+
+<style>
+  body {
+    background-color: black;
+    font-family: monospace;
+    color: green;
+  }
+  #orange-text {
+    color: orange;
+  }
+  .pink-text {
+    color: pink;
+  }
+  .blue-text {
+    color: blue;
+  }
+</style>
+<h1 style="color: white;" id="orange-text" class="pink-text blue-text">Hello World!</h1>
