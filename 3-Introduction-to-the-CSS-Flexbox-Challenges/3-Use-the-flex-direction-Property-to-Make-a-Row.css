@@ -1,0 +1,26 @@
+<!--  I learned that adding display: flex to an element turns it into a flex container. In order to align any children of an element into rows and columns, add the flex-direction property to the parent item and set it to row or column. Other options for flex-direction are row-reverse and column-reverse. The default value for the flex-direction property is row. Before doing the run the results, I tried all of the options in the flex-direction, row, column, row-reverse, column reverse to see the results
+-->
+
+<style>
+  #box-container {
+    display: flex;
+    height: 500px;
+    flex-direction: row-reverse;
+  }
+  #box-1 {
+    background-color: dodgerblue;
+    width: 50%;
+    height: 50%;
+  }
+
+  #box-2 {
+    background-color: orangered;
+    width: 50%;
+    height: 50%;
+  }
+</style>
+
+<div id="box-container">
+  <div id="box-1"></div>
+  <div id="box-2"></div>
+</div>
