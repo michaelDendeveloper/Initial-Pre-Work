@@ -1,0 +1,19 @@
+<!-- browsers read css from top to bottom, so the browser will use whichever css declaration is last in the order of code.  Other ways to override CSS include id attributes.  Id attribute will always take precedence over the class so it does not matter where it falls in the flow of code.
+-->
+<style>
+#orange-text {
+  color: orange;
+}
+  body {
+    background-color: black;
+    font-family: monospace;
+    color: green;
+  }
+  .pink-text {
+    color: pink;
+  }
+  .blue-text {
+    color: blue;
+  }
+</style>
+<h1 id="orange-text" class="pink-text blue-text">Hello World!</h1>
