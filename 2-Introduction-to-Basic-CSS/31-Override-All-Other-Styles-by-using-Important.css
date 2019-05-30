@@ -1,0 +1,20 @@
+<!-- In many situations, CSS libraries will be used.  These may override CSS, so when it is absolutely necessary to be sure an element has specific attribute, use !imporatnt to assure it will override other definitions
+-->
+
+<style>
+  body {
+    background-color: black;
+    font-family: monospace;
+    color: green;
+  }
+  #orange-text {
+    color: orange;
+  }
+  .pink-text {
+    color: pink !important;
+  }
+  .blue-text {
+    color: blue;
+  }
+</style>
+<h1 id="orange-text" class="pink-text blue-text" style="color: white">Hello World!</h1>
