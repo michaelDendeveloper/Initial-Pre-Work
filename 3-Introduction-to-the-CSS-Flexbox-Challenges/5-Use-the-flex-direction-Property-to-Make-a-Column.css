@@ -1,0 +1,26 @@
+<!-- I learned how to use the flex-direction property to create a column by vertically stacking the contents of a flex container.  I have already experimented with this in add-flex-superpowers-to-the-tweet-embed lesson.
+-->
+
+<style>
+  #box-container {
+    display: flex;
+    height: 500px;
+    flex-direction: column;
+  }
+  #box-1 {
+    background-color: dodgerblue;
+    width: 50%;
+    height: 50%;
+  }
+
+  #box-2 {
+    background-color: orangered;
+    width: 50%;
+    height: 50%;
+  }
+</style>
+
+<div id="box-container">
+  <div id="box-1"></div>
+  <div id="box-2"></div>
+</div>
