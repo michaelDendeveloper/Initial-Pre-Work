@@ -1,0 +1,17 @@
+<!-- add multiple class attributes to an HTML element.  Adding multiple class attributes to an HTM element is done with a space between them inside of quotes
+class = "class1 class2."  It is the order of the class declarations in the style section that determine the order of precedence.  The second class declared overrides the attributes of the first.
+-->
+<style>
+  body {
+    background-color: black;
+    font-family: monospace;
+    color: green;
+  }
+  .pink-text {
+    color: pink;
+  }
+  .blue-text {
+    color: blue;
+  }
+</style>
+<h1 class="pink-text blue-text">Hello World!</h1>
