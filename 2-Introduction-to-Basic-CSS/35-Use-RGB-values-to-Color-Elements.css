@@ -1,0 +1,9 @@
+<!-- Another way to represent colors is using rgb values in the form RGB(0,0,0). For example, orange can be represented RGB(225,165,0).
+-->
+
+<style>
+  body {
+    background-color: rgb(0,0,0);
+    color: rgb(0,0,0);
+  }
+</style>
