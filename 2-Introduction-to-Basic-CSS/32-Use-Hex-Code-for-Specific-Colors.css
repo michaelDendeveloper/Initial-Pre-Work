@@ -1,0 +1,8 @@
+<!-- hex code is short for hexadecimals, with are base 16 numbers.  Hesadecimals can be used to represent red,green or blue (RGB) elements.  000000 is the lowest possible value and renders as black.
+-->
+
+<style>
+  body {
+    background-color: #000000;
+  }
+</style>
