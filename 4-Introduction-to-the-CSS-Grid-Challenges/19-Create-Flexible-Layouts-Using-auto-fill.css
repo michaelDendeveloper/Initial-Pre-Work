@@ -1,0 +1,49 @@
+<!-- I learned That auto-fill allows the automatic insertion of as many rows or columns possible depending on the size of the container.  Combining auto-fill with minmax cab be a way of creating flexible layouts.  If the container can't fit all the items on one row, it will move them down to a new one.  Resizing the preview shows the effect.  As the preview is made smaller, the top five boxes stay the same size, but move down to new rows when the window is too small for the rows the bottom items strech and then shrink down, without making new rows, the items get smaller
+-->
+<style>
+  .item1{background:LightSkyBlue;}
+  .item2{background:LightSalmon;}
+  .item3{background:PaleTurquoise;}
+  .item4{background:LightPink;}
+  .item5{background:PaleGreen;}
+
+  .container {
+    font-size: 40px;
+    min-height: 100px;
+    width: 100%;
+    background: LightGray;
+    display: grid;
+    /* change the code below this line */
+
+    grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+
+    /* change the code above this line */
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 10px;
+  }
+
+  .container2 {
+    font-size: 40px;
+    min-height: 100px;
+    width: 100%;
+    background: Silver;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(60px, 1fr));
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 10px;
+  }
+</style>
+<div class="container">
+  <div class="item1">1</div>
+  <div class="item2">2</div>
+  <div class="item3">3</div>
+  <div class="item4">4</div>
+  <div class="item5">5</div>
+</div>
+<div class="container2">
+  <div class="item1">1</div>
+  <div class="item2">2</div>
+  <div class="item3">3</div>
+  <div class="item4">4</div>
+  <div class="item5">5</div>
+</div>
