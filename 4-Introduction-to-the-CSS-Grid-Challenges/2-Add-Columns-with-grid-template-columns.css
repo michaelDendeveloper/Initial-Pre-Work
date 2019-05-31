@@ -1,0 +1,29 @@
+<!-- I noticed when I created the grid element, the display did not change in the review panel.  This is because the structure of the grid needs to be defined after creating the grid element.  Use grid-template-columns to add some columns to the grid.  I tried some other units of measure to determine if they have similar results as when used in css flexbox.  grid-template-columns: 20% 20% 20% 20% 20%; creates five very neat columns with the numbers to the left of the color. This is a neater looking measure than using three columns of 100px each.
+-->
+
+<style>
+  .d1{background:LightSkyBlue;}
+  .d2{background:LightSalmon;}
+  .d3{background:PaleTurquoise;}
+  .d4{background:LightPink;}
+  .d5{background:PaleGreen;}
+
+  .container {
+    font-size: 40px;
+    width: 100%;
+    background: LightGray;
+    display: grid;
+    /* add your code below this line */
+    grid-template-columns: 100px 100px 100px;
+
+    /* add your code above this line */
+  }
+</style>
+
+<div class="container">
+  <div class="d1">1</div>
+  <div class="d2">2</div>
+  <div class="d3">3</div>
+  <div class="d4">4</div>
+  <div class="d5">5</div>
+</div>
