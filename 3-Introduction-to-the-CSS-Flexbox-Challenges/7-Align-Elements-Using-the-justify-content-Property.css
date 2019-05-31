@@ -1,0 +1,29 @@
+<!-- I learned the justify-content property has several options to tell CSS how to align and space out flex items in a certain way.  There is important terminology to know before using those options.  flex-container - as a row places items left - to right.  A column places flex items in a verticle stack.  The Main Axis is the direction the flex items are arranged in.  This is a horizontal or verticle line.  Of several options for how to space flex items along the line that is the main axis, one of the most commonly used is Justify-content: center; which aligns the flex items to the center inside the flex container.  Others are flex-start,flex-end,space-between,space-around (similar to space-between). The bonus challenges the programmer to try the other justify-content property in the editor to see their differences. I did this as I did with other lessons
+-->
+
+<style>
+  #box-container {
+    background: gray;
+    display: flex;
+    height: 500px;
+
+    justify-content: center;
+
+  }
+  #box-1 {
+    background-color: dodgerblue;
+    width: 25%;
+    height: 100%;
+  }
+
+  #box-2 {
+    background-color: orangered;
+    width: 25%;
+    height: 100%;
+  }
+</style>
+
+<div id="box-container">
+  <div id="box-1"></div>
+  <div id="box-2"></div>
+</div>
