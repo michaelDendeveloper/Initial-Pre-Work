@@ -1,4 +1,4 @@
-<!-- I learned That auto-fill allows the automatic insertion of as many rows or columns possible depending on the size of the container.  Combining auto-fill with minmax cab be a way of creating flexible layouts.  If the container can't fit all the items on one row, it will move them down to a new one.  Resizing the preview shows the effect.  As the preview is made smaller, the top five boxes stay the same size, but move down to new rows when the window is too small for the rows the bottom items strech and then shrink down, without making new rows, the items get smaller
+<!-- I learned That auto-fit works almost identically to autofill.  The only difference is that auto-fit collapses the empty rows or columns and stretches your items  to fit the size of the container, where auto-fill keeps inserting empty rows or columns and pushes items to the side.  Modifying the code in the container to include auto-fit and resizing the preview panel shows how the columns stretch and shrink with resizing.  When the preview page gets small enough, the boxes on the top shift to the new row, the 5 boxes on the bottom resize, but do not wrap to create new rows.
 -->
 <style>
   .item1{background:LightSkyBlue;}
@@ -15,7 +15,7 @@
     display: grid;
     /* change the code below this line */
 
-    grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
 
     /* change the code above this line */
     grid-template-rows: 1fr 1fr 1fr;
