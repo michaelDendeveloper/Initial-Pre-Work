@@ -1,0 +1,32 @@
+<!-- This challenge was submitted out of order because something happened that caused sourcetree to stop responding every time I staged the completed code.  I redid the challenge and submitted it the day after the other grid challenges.
+In This challenge, I learned that the units used for sizes of rows of and columns can be defined with relative units as well as absolute units.  The units are fr: sets the column or row to a fraction of the available space, auto, sets the column or row to the width or height of its content, % adjusts the column or row to the percent of its container.  I tried these different units in the editor to see the effects in the preview. grid-template-columns auto 1fr 2fr 1 fr 5em results in columns that fill the space, but have different sizes.  Columns 2 3 and 4 stretch when the preview is resized.  The size 1fr 100px 2fr is the solution
+-->
+
+<style>
+  .d1{background:LightSkyBlue;}
+  .d2{background:LightSalmon;}
+  .d3{background:PaleTurquoise;}
+  .d4{background:LightPink;}
+  .d5{background:PaleGreen;}
+
+  .container {
+    font-size: 40px;
+    width: 100%;
+    background: LightGray;
+    display: grid;
+    /* modify the code below this line */
+
+    grid-template-columns: 1fr 100px 2fr;
+
+    /* modify the code above this line */
+    grid-template-rows: 50px 50px;
+  }
+</style>
+
+<div class="container">
+  <div class="d1">1</div>
+  <div class="d2">2</div>
+  <div class="d3">3</div>
+  <div class="d4">4</div>
+  <div class="d5">5</div>
+</div>
