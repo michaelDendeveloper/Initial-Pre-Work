@@ -1,6 +1,7 @@
-<!-- I learned That auto-fit works almost identically to autofill.  The only difference is that auto-fit collapses the empty rows or columns and stretches your items  to fit the size of the container, where auto-fill keeps inserting empty rows or columns and pushes items to the side.  Modifying the code in the container to include auto-fit and resizing the preview panel shows how the columns stretch and shrink with resizing.  When the preview page gets small enough, the boxes on the top shift to the new row, the 5 boxes on the bottom resize, but do not wrap to create new rows.
+<!-- I learned how to use the auto-fill function that allows the automatic insertion of as many rows or columns of the desired size as possible depending on the size of the container.  The effect of auto-fill as compared to repeat(3, minmax(60mx, 1fr)) can be seen when the display panel is resized to a very narrow size.  Auto fill moves the columns to new rows, the measure without auto-fill stretch and shrink.
 -->
-<style>
+
+--><style>
   .item1{background:LightSkyBlue;}
   .item2{background:LightSalmon;}
   .item3{background:PaleTurquoise;}
@@ -15,7 +16,7 @@
     display: grid;
     /* change the code below this line */
 
-    grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
 
     /* change the code above this line */
     grid-template-rows: 1fr 1fr 1fr;
