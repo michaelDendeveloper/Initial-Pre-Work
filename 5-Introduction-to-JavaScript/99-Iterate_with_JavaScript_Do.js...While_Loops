@@ -1,0 +1,13 @@
+/* I learned that the do.. while loop will execute the loop at least one time because the test for exiting the loop is at the end of the loop.  the do while is different from other loops because of how it behaves when the condition fails on the first check.
+*/
+// Setup
+var myArray = [];
+var i = 10;
+
+// Only change code below this line.
+do {
+
+  myArray.push(i);
+  i++;
+  console.log(myArray + " " + i);
+} while (i < 11); 
