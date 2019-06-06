@@ -1,3 +1,5 @@
+/* I learned how to access nested objects in JavaScript by chaining together dot and bracket notations
+*/
 // Setup
 var myStorage = {
   "car": {
