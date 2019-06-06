@@ -11,3 +11,4 @@ var testObj = {
 
 var entreeValue = testObj["an entree"];   // Change this line
 var drinkValue = testObj["the drink"];    // Change this line
+console.log(entreeValue + " " + drinkValue);
